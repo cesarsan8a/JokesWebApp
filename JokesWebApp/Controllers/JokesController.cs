@@ -39,6 +39,7 @@ namespace JokesWebApp.Controllers
         }
 
         // GET: Jokes/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
